@@ -8,7 +8,8 @@
   <parameter name="os" value="Windows"></parameter>
   <parameter name="browser" value="chrome"></parameter>
     <classes>
-      <class name="testCases.AccountRegistrationTest"/>
+      <!-- <class name="testCases.AccountRegistrationTest"/> -->
+      <class name="testCases.LoginTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
