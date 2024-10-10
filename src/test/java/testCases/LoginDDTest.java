@@ -11,7 +11,7 @@ import utilities.DataProviders;
 
 public class LoginDDTest extends BaseClass {
 
-	@Test(dataProvider="LoginData", dataProviderClass=DataProviders.class)
+	@Test(dataProvider="LoginData", dataProviderClass=DataProviders.class, groups="Datadriven")
 	public void verify_loginDDT(String email, String pwd, String exp)
 	{
 		
