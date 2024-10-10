@@ -24,7 +24,7 @@ public class BaseClass {
 	public Logger logger;
 	public Properties p;
 	
-	@BeforeClass
+	@BeforeClass (groups= {"Sanity", "Regression", "Master", "Datadriven"})
 	@Parameters({"os","browser"})
 	public void setup(String os, String br) throws IOException
 	{
@@ -51,7 +51,7 @@ public class BaseClass {
 		//driver.get("https://tutorialsninja.com/demo/");
 		driver.manage().window().maximize();
 	}
-	@AfterClass
+	@AfterClass (groups= {"Sanity", "Regression", "Master", "Datadriven"})
 	public void tearDown()
 	{
 		driver.quit();
