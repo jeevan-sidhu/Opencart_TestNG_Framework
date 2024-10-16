@@ -5,14 +5,17 @@
 <suite name="Master Suite">
 <groups>
 	<run>
-		 <include name="Sanity"></include>
-	<!--	<include name="Master"></include> -->
+		<!-- <include name="Sanity"></include> -->
+	<include name="Master"></include>
 	<!--	<include name="Regression"></include> -->
 		<!-- <exclude name="Datadriven"></exclude> -->
 	</run>
 </groups>
 
-
+  <listeners>
+  <listener class-name="utilities.ExtentReportManager"></listener>
+  </listeners>
+  
   <test thread-count="5" name="Test">
   
   <parameter name="os" value="Windows"></parameter>

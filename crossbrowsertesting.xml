@@ -3,6 +3,11 @@
 
 
 <suite name="Suite" thread-count="5" parallel="tests">
+
+  <listeners>
+  <listener class-name="utilities.ExtentReportManager"></listener>
+  </listeners>
+  
   <test  name="ChromeTest">
   
   <parameter name="os" value="Windows"></parameter>
